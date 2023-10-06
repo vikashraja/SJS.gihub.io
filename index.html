@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swachh Jal Sewa</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <header>
+        <h1>Welcome to Swachh Jal Sewa</h1>
+    </header>
+    <div class="container">
+        <h2>Mission and Vision</h2>
+        <p id="p1">Our objective and mission for this project is simple yet very urgent, to make clean water available in places where it's hard to get. We want to help underprivileged communities by providing them access to affordable water purification systems that are easy to use.
+        <br>
+        <br>
+        We envision a healthier world where everyone has access to clean and affordable drinking water. By doing this, we aim to positively impact the lives of those in disadvantaged communities by addressing their fundamental need for clean water.
+        <br>
+        <br>
+        We also want to involve local authorities in setting up and taking care of these purifiers. This way, the community will own them and keep them working for a long time. And we plan to use methods that are good for the environment, that do not create too much waste or use up too much energy.
+        <br>
+        <br>
+
+        Indirectly, our efforts will also help protect the environment by using eco-friendly purification techniques, reducing waste, and conserving energy.
+        <br>
+        <br>
+        In short, our mission is to help underprivilaged people acquire clean water in a way that's good for them and the Earth. This will make their lives better and protect nature.</p>
+
+        <h2>
+            Some Statistics
+        </h2>
+
+        <marquee class="css" behavior="scroll" direction="up" scrollamount="2"> 
+        •   In 2022, 2.2 billion people still lacked safely managed drinking water, including 703 million without a basic water service. – UN Website.
+        <br>
+        <br>
+        •   3.5 billion people lacked safely managed sanitation, including 1.5 billion without basic sanitation services. – UN Website. 
+        <br>
+        <br>
+        •   2 billion lacked a basic handwashing facility, including 653 million with no handwashing facility at all. – UN Website.
+        <br>
+        <br>
+        •   Achieving SDG – 6, Clean Water and Sanitation by 2030 will require a substantial increase in current global rate of progress: sixfold for drinking water. – UN Website
+        <br>
+        <br>
+        •   Only 40 Water ATM for a 100,000 people globally.  – World Bank, 2021
+        <br>
+        <br>
+
+        •    First RO Water ATM in Delhi was launched in July 2023. The government of Delhi has committed for 500 more. - Times Group
+        <br>
+        <br>
+
+
+
+</marquee>
+
+<div>
+    <h2>
+        Some Glimpses of Research and Studies 
+    </h2>
+</div>
+        <div class="gallery">
+  <img src="sjs1.jpeg" >
+  <img src="https://picsum.photos/id/705/300/300">
+  <img src="sjs2.jpeg" >
+  <img src="https://picsum.photos/id/730/300/300">
+  <img src="sjs3.jpeg" >
+  <img src="https://picsum.photos/id/28/300/300" >
+  <img src="sjs4.jpeg" >
+  <img src="https://picsum.photos/id/716/300/300">
+  <img src="sjs5.jpeg">
+</div>
+
+        <h2>Our Services</h2>
+        <ul>
+            <li>24/7 Access to Purified Water</li>
+            <li>Convenient Locations</li>
+            <li>Competitive Prices</li>
+        </ul>
+
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+            <p>Email: info@swachhjalsewa.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p>Satya School</p>
+        </div>
+        
+        <h2>Find a Swachh jal near you</h2>
+        <button class="button" id="findATMButton">Find Nearest ATM</button>
+        <div id="atmLocation"></div>
+    </div>
+            
+            
+
+    <footer>
+        &copy; 2023 Swachh Jal Sewa
+    </footer>
+
+    <script>
+        // JavaScript to handle the button click event
+        document.getElementById("findATMButton").addEventListener("click", function() {
+            // Simulate fetching ATM location data (replace with actual data)
+            const locationData = {
+                name: "Test ATM",
+                address: "TEST Address",
+                hours: "24/7"
+            };                              
+
+            // Display the ATM location information
+            const atmLocationElement = document.getElementById("atmLocation");
+            atmLocationElement.innerHTML = `
+                <h3>${locationData.name}</h3>
+                <p><strong>Address:</strong> ${locationData.address}</p>
+                <p><strong>Hours of Operation:</strong> ${locationData.hours}</p>
+            `;
+        });
+
+    </script>
+
+</body>
+</html>

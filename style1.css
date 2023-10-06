@@ -1,0 +1,103 @@
+.gallery {
+  --s: 150px; /* control the size */
+  align-content: center;
+  
+  display: grid;
+  gap: 10px; /* control the gap */
+  grid: auto-flow var(--s)/repeat(3,var(--s));
+  place-items: center;
+  margin: calc(var(--s)/4);
+}
+.gallery > img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.gallery > img:nth-child(odd) {
+  border-radius: 50%;
+  width: 141%;
+}
+.gallery > img:nth-child(even) {
+  --_r: calc(var(--s)/1.414) at;
+  --_g: calc(var(--s)/-2),#000 99%,#0000;
+  --_m:
+    radial-gradient(var(--_r) left 50% bottom var(--_g)),
+    radial-gradient(var(--_r) left 50% top    var(--_g)),
+    radial-gradient(var(--_r) top  50% right  var(--_g)),
+    radial-gradient(var(--_r) top  50% left   var(--_g)),
+    linear-gradient(#000 0 0);
+  -webkit-mask: var(--_m);
+          mask: var(--_m);
+  -webkit-mask-composite: destination-out;
+          mask-composite: exclude;
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background: #c9aa08;
+  align-content: center;
+}
+body {
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://img.freepik.com/free-photo/view-water-transparent-glass_23-2150718360.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;       
+        }
+
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            opacity: 0.8;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 25px;
+            font-family: serif;
+            font-weight: bold;
+            font-size: 20px;
+            align-content: center;
+
+        }
+        .css {
+            position:relative;
+            top:10px;
+            left:100px;
+            height:200px;
+            width: 800px;
+            padding: 10px;
+            background-color: gray;
+            border-radius: 25px;
+            }
+        .contact-info 
+        {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
